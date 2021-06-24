@@ -1,11 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import React from "react";
 
-export default function Home() {
+const about = () => {
   return (
     <div>
-      <h1>Homepage</h1>
+      <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
         commodi ipsum in pariatur soluta quam, omnis tenetur nisi aspernatur
@@ -20,4 +18,6 @@ export default function Home() {
       </p>
     </div>
   );
-}
+};
+
+export default about;
