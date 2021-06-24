@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-// Link
+// Next
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const NotFound = () => {
+  const router = useRouter(); // For redirect
+
+  // UseEffect
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/"); // redirect to homepage
+    }, 3000);
+  }, []);
+
   return (
     <div className="not-found">
       <h1>Ooopss...</h1>
